@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <div>
       {status === "loading" && (
-        <div className="min-h-screen lg:fixed relative lg:mt-0 mt-60 top-1/2 lg:left-1/2 flex justify-center gap-2">
+        <div className="min-h-screen pb-40 lg:fixed relative lg:mt-0 mt-60 top-1/2 lg:left-1/2 flex justify-center gap-2">
           <Spinner color="purple" aria-label="Loading" size="md" />
           <span className="pl-3 text-purple-600 font-semibold text-lg">
             Loading...

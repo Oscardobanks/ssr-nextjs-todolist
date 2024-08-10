@@ -16,18 +16,27 @@
   }
 }
 
+:root {
+  --light-background-image: url("../public/pexels-martin-mariani-2162253-3801463.jpg");
+  --dark-background-image: url("../public/pexels-pixabay-531756.jpg");
+}
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-image: var(--light-background-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-image: var(--dark-background-image);
+  }
 }
 
 input:focus{
-  outline: none;
+  outline: none !important;
 }
 
 @layer utilities {

@@ -1,5 +1,7 @@
 import { wrapper } from "@/store/store";
 import "@/styles/globals.css";
+import "@/styles/darkMode.css";
+import "@/styles/toggleButton.css";
 import { Provider } from "react-redux";
 import { ToastContainer } from "react-toastify";
 

@@ -1,0 +1,110 @@
+body.dark-mode {
+  transition: background-image 0.5s ease;
+  background-image: url("../public/pexels-pixabay-531756.jpg");
+}
+
+body.dark-mode .bodyContainer {
+    color: #ffffff;
+    background-color: #2d3741;
+    transition: background-color 0.5s ease;
+}
+
+body.dark-mode .darkCard{
+  background-color: #394752;
+  border: 1px solid rgb(119, 119, 119);
+}
+
+body.dark-mode .darkInput{
+  background-color: #30404d;
+  color: white;
+  border: 1px solid rgb(119, 119, 119);
+}
+
+body.dark-mode .darkInput:focus{
+  outline: none;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: #ffffff;
+}
+
+body.dark-mode .spinner {
+  color: #ffffff;
+}
+
+body.dark-mode .button {
+  background-color: #374151;
+  color: #ffffff;
+}
+
+body.dark-mode .button:hover {
+  background-color: #4b5563;
+}
+
+body.dark-mode .tabs {
+  background-color: #121212;
+}
+
+body.dark-mode .tabs .tab-item {
+  color: #ffffff;
+}
+
+body.dark-mode .tabs .tab-item.active {
+  color: #6366f1;
+}
+
+body.dark-mode .tabs .tab-item:hover {
+  color: #ffffff;
+}
+
+body.dark-mode .modal {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .modal .close-button {
+  color: #ffffff;
+}
+
+body.dark-mode .modal .close-button:hover {
+  color: #ffffff;
+}
+
+body.dark-mode .darkImage {
+  display: none;
+}
+
+body.dark-mode .lightImage {
+  display: block;
+}
+
+body:not(.dark-mode) {
+  background-image: url("../public/pexels-martin-mariani-2162253-3801463.jpg");
+  transition: background-image 0.5s ease;
+}
+
+body:not(.dark-mode) .darkImage {
+  display: block;
+}
+
+body:not(.dark-mode) .lightImage {
+  display: none;
+}
+
+@keyframes swipe {
+  0% {
+    background-image: url("../public/pexels-martin-mariani-2162253-3801463.jpg");
+  }
+  100% {
+    background-image: url("../public/pexels-pixabay-531756.jpg");
+  }
+}
+
+body.swiping {
+  animation: swipe 0.5s ease;
+}

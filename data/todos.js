@@ -1,28 +1,28 @@
 let todos = [
   {
     id: 1,
-    title: "Do Laundry of babies things and everyone",
+    title: "Do Laundry of dirty clothes",
     priority: "High",
     completed: false,
     created: new Date(),
   },
   {
     id: 2,
-    title: "babies things and everyone",
+    title: "Go shopping for babies things",
     priority: "Medium",
     completed: true,
     created: new Date(),
   },
   {
     id: 3,
-    title: "Do Laundry of things everyone",
+    title: "Clean the kitchen",
     priority: "High",
     completed: true,
     created: new Date(),
   },
   {
     id: 4,
-    title: "Wash Plates",
+    title: "Wash all the Plates",
     priority: "Low",
     completed: false,
     created: new Date(),
@@ -34,7 +34,7 @@ export const getTodos = () => todos;
 export const getTodoById = (id) => todos.find((todo) => todo.id === parseInt(id, 10));
 
 export const addTodo = (todo) => {
-  const newTodo = { ...todo, id: todo.length + 1 };
+  const newTodo = { ...todo, id: todos.length + 1, created: new Date };
   todos.push(newTodo);
   return newTodo;
 };
